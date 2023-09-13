@@ -1,3 +1,5 @@
+from Hello import hello
+
 class Person:
     def __init__(self, name, age, city='Moscow'):
         self.name = name
@@ -9,4 +11,6 @@ class Person:
 
 
 mike = Person('Mike', 32)
+nick = Person('Nick', 28, 'Saint-Petersburg')
 print(mike)
+hello(nick)
