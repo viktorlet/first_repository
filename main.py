@@ -22,5 +22,7 @@ class Person:
 
 mike = Person('Mike', 32)
 nick = Person('Nick', 28, 'Saint-Petersburg')
-
+print(mike)
+hello(nick)
+print(mike > nick)
 
