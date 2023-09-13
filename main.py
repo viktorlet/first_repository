@@ -1,4 +1,4 @@
-from Hello import hello
+from hello import hello
 
 class Person:
     def __init__(self, name, age, city='Moscow'):
