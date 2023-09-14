@@ -1,4 +1,6 @@
 from hello import hello
+from age import age_difference
+
 
 class Person:
     def __init__(self, name, age, city='Moscow'):
@@ -7,7 +9,7 @@ class Person:
         self.city = city
 
     def __str__(self):
-        return f'{self.name}: age {self.age}, city {self.city }'
+        return f'{self.name}: age {self.age}, city {self.city}'
 
     def __eq__(self, other):
         return self.age == other.age
@@ -19,10 +21,8 @@ class Person:
         return self.age <= other.age
 
 
-
 mike = Person('Mike', 32)
 nick = Person('Nick', 28, 'Saint-Petersburg')
 print(mike)
 hello(nick)
-print(mike > nick)
-
+age_difference(mike, nick)
